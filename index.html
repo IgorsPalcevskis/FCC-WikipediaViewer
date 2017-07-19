@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wikipedia Viewer</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container main_div">
+<!-- header -->
+    <div class="row wiki_head">
+      <h1><b>W</b>ikipedia <b>V</b>iewer</h1>
+    </div>
+<!-- search input -->
+    <div class="row search_bar_div">
+      <div class="col-lg-2 col-md-2 col-sm-2"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <input id="search_term" class="search_bar" type="text" placeholder="Search.."/>
+      </div>
+    </div>
+<!-- button row -->
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-1"></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 search_button">
+        <button id="search_button" type="button">Search</button>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 random_button" title="To Random Wiki Page">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button type="button"><i class="fa fa-random hidden-lg hidden-md hidden-sm" aria-hidden="true"></i><span class="hidden-xs">Random</span></button></a>
+      </div>
+    </div>
+<!-- APIs response -->
+    <div id="data_from_wiki"></div>
+  </div>
+  <footer>
+    <p>This web application is built using <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">MediaWiki</a> action API</p>
+    <p>Coded by <a href="https://www.facebook.com/IgorsPalcevskis" target="_blank">Igors Palcevskis<a></p>
+  </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/809d523534.js"></script>
+<script src="java.js"></script>
+</body>
+</html>

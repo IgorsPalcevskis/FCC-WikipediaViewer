@@ -1,0 +1,98 @@
+html{
+  position:relative;
+  height: 100%;
+}
+body {
+  background-color: #b3e6b3;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* ---------------------------------------------------- title */
+.wiki_head {
+  height: 300px;
+}
+.wiki_head>h1 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 300px;
+}
+.wiki_head>h1>b {
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .wiki_head>h1 {
+    font-size: 3em;
+  }
+  .wiki_head>h1>b {
+    font-size: 2em;
+  }
+}
+/* ---------------------------------------------------- search input */
+input.search_bar[type=text] {
+  display: block;
+  margin: auto;
+  padding: 12px 20px 12px 20px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 4px 2px -2px gray;
+  transition: box-shadow 0.1s;
+}
+input.search_bar[type=text]:focus, input.search_bar[type=text]:hover {
+  box-shadow: 0 4px 7px gray;
+  outline: none;
+}
+/* -------------------------------------------------------------- buttons */
+button {
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+  color: #737373;
+  background-color: #e6e6e6;
+  box-shadow: 0 4px 2px -2px gray;
+  border: none;
+  transition: box-shadow 0.1s;
+  width: 100%;
+}
+button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 7px gray;
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 0 4px 2px -2px gray;
+}
+/* ---------------------------------------------------------------- results */
+.single_result {
+  font-size: 1.3em;
+  background-color: white;
+  padding: 12px;
+  margin-top: 25px;
+  box-shadow: 0 4px 2px -2px gray;
+  transition: box-shadow 0.2s;
+}
+.single_result:hover {
+  box-shadow: 0 4px 7px gray;
+  cursor: pointer;
+}
+.single_result:active {
+  box-shadow: 0 4px 2px -2px gray;
+}
+a.wiki_link {
+  color: inherit;
+}
+a.wiki_link:hover, a.wiki_link:focus, a.wiki_link:active, a.wiki_link:visited {
+  text-decoration: none;
+}
+/* -------------------------------------------------------------- footer */
+.main_div {
+  flex: 1;
+}
+footer {
+  padding-top: 15px;
+  height: 100px;
+  text-align: center;
+}
